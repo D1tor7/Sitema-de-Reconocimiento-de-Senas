@@ -1,10 +1,23 @@
 import subprocess
 
+
 def ejecutar_identificador_movimiento():
-    subprocess.call(["python", "E:\\User\\Escritorio\\Sistemas_Conversacionales\\Semana16\\Proyecto1\\IdentificadorMovimiento.py"])
+    subprocess.call(
+        [
+            "python",
+            "Proyecto1/IdentificadorMovimiento.py",
+        ]
+    )
+
 
 def ejecutar_sin_movimiento():
-    subprocess.call(["python", "E:\\User\\Escritorio\\Sistemas_Conversacionales\\Semana16\\Proyecto1\\ProyectoMediaPipe_SinMovimiento.py"])
+    subprocess.call(
+        [
+            "python",
+            "Proyecto1/ProyectoMediaPipe_SinMovimiento.py",
+        ]
+    )
+
 
 def main():
     print("Seleccione una opción:")
@@ -19,6 +32,7 @@ def main():
         ejecutar_sin_movimiento()
     else:
         print("Opción inválida. Por favor, seleccione 1 o 2.")
+
 
 if __name__ == "__main__":
     main()
